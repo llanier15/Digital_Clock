@@ -42,9 +42,8 @@ function showTime(){
   min = (min < 10) ? "0" + min : min;
   sec = (sec < 10) ? "0" + sec : sec;
 
-  let time = hrs + ":" + min + ":" + sec + " " + session;
+  let time = hrs + " : " + min + " : " + sec + " " + session;
   document.getElementById("clock").innerText = time;
-  document.getElementById("clock").textContent = time;
 
   setTimeout(showTime, 1000);
 }
